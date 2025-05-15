@@ -1,0 +1,86 @@
+* {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border: 1px solid black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navbar li a {
+    text-decoration: none;
+
+    font-size: 28px;
+    color: black;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: url("/images/Hero Section_r.png"); */
+}
+
+.banner--img {
+    width: 49%;
+    height: 834px;
+    /* background-color: red; */
+}
+
+.banner--title {
+    width: 49%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    padding-left: 80px;
+    padding-right: 193px;
+    color: #0027D5;
+    height: 834px;
+    /* background-color: gray; */
+    background: url("/images/Hero Section_r.png");
+}
+
+.banner--title h1 {
+    font-size: 120px;
+}
+
+.banner--title p {
+    font-size: 28px;
+}
+
+@media(max-width:727px) {
+
+.banner--img {
+    width: 100%;
+    /* height: 375px; */
+        /* background-color: yellow; */
+}
+
+    .banner--title {
+        padding-left: 24px;
+        padding-top: 24px;
+        padding-right: 34px;
+        padding-bottom: 40px;
+        width: 100%;
+        /* height: 356px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner--title h1 {
+        font-size: 52px;
+    }
+}
