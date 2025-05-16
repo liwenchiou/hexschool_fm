@@ -52,15 +52,16 @@ table {
 	border-spacing: 0;
 }
 
-/*圖片不管多大都會控制在父層內*/
 img{
-    max-width: 100%;
-    height: auto;
+  width: 100%; /* 寬度適應父層區塊 */
+  height: auto; /* 高度自動 */
+  display: block; /* 把圖片變成區塊元素，清楚底部空隙 */
+  object-fit: cover; /* 讓圖片填滿父層 */ 
 }
 
-/*不計算padding 和 border*/
+
 *,*::before,*::after{
-box-sizing:border-box;
+box-sizing:border-box; /*不計算padding 和 border*/
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
