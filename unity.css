@@ -1,11 +1,25 @@
 .icon-m{
-    width: 24px;
-    height: 17px;
+    width: 44px;
+    height: 44px;
 }
 
 .icon-40{
     width: 40px;
     height: 40px;
+}
+.icon-80{
+    width: 80px;
+    height: 80px;
+}
+.icon-check{
+    width: 16px;
+    height: 16px;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .df{
@@ -20,8 +34,9 @@
 .dash{
     border:1.25px solid blue;
     border-radius: 10PX;
-    width: 30px;
-    margin:5px 18.75px;
+    width: 28px;
+    margin:19px 6px;
+    /* padding:19px 0px; */
 }
 .ml--40{
     margin-left: -40px;
@@ -29,6 +44,25 @@
 .mr--40{
     margin-right: -40px;
 }
+.mt--40{
+    margin-top: -40px;
+}
+.ml--219{
+    margin-left: -219px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
 .z-10{
     z-index: 10;
+}
+
+.bg-FFF{
+    background-color: #FFF;
+}
+.bg-F5F5F5{
+    background-color: #F5F5F5;
 }
