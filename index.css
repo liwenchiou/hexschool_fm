@@ -1,12 +1,13 @@
-* {
-    font-family: "Noto Sans TC", sans-serif;
-    line-height: 1.5;
-    font-weight: bold;
-}
-
 .container {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+@media(max-width:992) {
+    .container {
+        max-width: 992px;
+        /* margin: 0 auto; */
+    }
 }
 
 .navbar {
@@ -34,13 +35,13 @@
 }
 
 .banner--img {
-    width: 49%;
+    width: 50%;
     /* height: 834px; */
     /* background-color: red; */
 }
 
 .banner--title {
-    /* width: 49%; */
+    width: 50%;
 
     height: 834px;
     background-color: gray;
@@ -64,7 +65,7 @@
     font-size: 28px;
 }
 
-@media(max-width:375px) {
+@media(max-width:992px) {
     .banner {
         flex-wrap: wrap;
     }
@@ -130,7 +131,7 @@
 
 }
 
-@media(max-width:922px) {
+@media(max-width:992px) {
     .about {
         margin-top: 0;
     }
@@ -212,7 +213,7 @@
 
 
 
-@media(max-width:922px) {
+@media(max-width:992px) {
     .service {
         margin: 0 auto;
         padding: 64px 12px;
@@ -297,11 +298,24 @@
     font-size: 16px;
 }
 
+.tag {
+    display: flex;
+    align-items: center;
+}
+
 .tag a {
     font-size: 24px;
     text-decoration: none;
     color: blue;
     font-weight: 500;
+    margin-right: 8px;
+}
+
+.tag .card--tag {
+    background-color: blue;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 50px;
 }
 
 .card--content h2 {
@@ -345,7 +359,7 @@
     display: inline-block;
 }
 
-@media(max-width:922px) {
+@media(max-width:992px) {
     .blog {
         width: 100%;
         padding: 64px 12px;
@@ -371,7 +385,9 @@
     .blog--card {
         width: 100%;
     }
-    .card2,.card3{
+
+    .card2,
+    .card3 {
         display: none;
     }
 
@@ -559,7 +575,7 @@
 
 
 
-@media(max-width:922px) {
+@media(max-width:992px) {
     .successCase {
         margin: 0;
         padding: 64px 12px;
@@ -739,7 +755,7 @@
     font-weight: bold;
 }
 
-@media(max-width:977px) {
+@media(max-width:992px) {
     .newslitter {
         display: flex;
         flex-direction: column;
@@ -841,7 +857,7 @@
     text-align: end;
 }
 
-@media(max-width:977px) {
+@media(max-width:992px) {
     .contact {
         padding: 64px 12px;
     }
