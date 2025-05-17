@@ -57,6 +57,7 @@ img{
   height: auto; /* 高度自動 */
   display: block; /* 把圖片變成區塊元素，清楚底部空隙 */
   object-fit: cover; /* 讓圖片填滿父層 */ 
+  background-size: cover; /*圖片自動調整大小*/
 }
 
 
