@@ -339,6 +339,7 @@
 
     .article {
         padding: 64px 0px;
+        margin: 0px 12px;
     }
 
     .article--search {
@@ -347,7 +348,10 @@
         align-items: center;
         border: 1px solid black;
         border-radius: 50px;
-        padding: 0px 12px;
+        /* padding: 0px 12px; */
+        padding: 16px;
+        /* margin: 0px 12px; */
+
     }
 
     .article--search svg {
@@ -359,6 +363,7 @@
     }
 
     .article--list {
+        margin: 0;
         padding: 40px 12px;
         display: flex;
         flex-wrap: wrap;
