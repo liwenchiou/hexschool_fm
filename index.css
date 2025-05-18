@@ -1,3 +1,4 @@
+/* container 區塊 */
 .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -27,25 +28,22 @@
     color: black;
 }
 
+/* banner 區塊 */
+
 .banner {
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* background: url("/images/Hero Section_r.png"); */
 }
 
 .banner--img {
     width: 50%;
-    /* height: 834px; */
-    /* background-color: red; */
 }
 
 .banner--title {
     width: 50%;
-
     height: 834px;
     background-color: gray;
-    background: url("/images/Hero Section_r.png");
+    background: url("./images/index/a1.png");
 }
 
 .banner--title--content {
@@ -100,6 +98,8 @@
     }
 }
 
+/* about */
+
 .about {
     justify-content: end;
     margin-top: -180px;
@@ -147,6 +147,9 @@
         font-size: 24px;
     }
 }
+
+
+/* service 區塊 */
 
 .service {
     /* background-color: red; */
