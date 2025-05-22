@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>個人介紹</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="unity.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BQ9W9MMG5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9BQ9W9MMG5');
+    </script>
+
+
 </head>
 
 <body>
-    <!-- navbar -->
+
+    <!-- 導覽列選單 -->
     <ul class="navbar">
-        <li><a class="navbar--a" href="index.html">首頁</a></li>
-        <li><a class="navbar--a" href="blog.html">部落格</a></li>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="blog.html">部落格</a></li>
     </ul>
 
-    <!-- banner -->
-    <div class="banner--section">
+    <!-- banner區塊 -->
+    <div class="banner">
         <div class="banner--img">
             <img src="./images/index/a0.png" alt="大頭照">
         </div>
@@ -28,28 +41,28 @@
                 <h1>Alyse Wang</h1>
                 <p>前端工程師 & 職涯諮詢師</p>
             </div>
-        </div>
 
-    </div>
-    
-    <div class="banner--aboutme--section">
-        <div class="banner--aboutme">
-            <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
-            <p>擅長 React、Vue
-                等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！</p>
-            <ul class="df">
-                <li><a href="#"><img src="./images/btn/youtube.png" alt="YT 圖式" class="icon-m"></a></li>
-                <li><a href="#"><img src="./images/btn/podcast.png" alt="podcast 圖式" class="icon-m"></a></li>
-                <li><a href="#"><img src="./images/btn/facebook.png" alt="FB 圖式" class="icon-m"></a></li>
-                <li><a href="#"><img src="./images/btn/linkedin.png" alt="Linkedin 圖式" class="icon-m"></a>
-                </li>
-                <li><a href="#"><img src="./images/btn/instagram.png" alt="IG 圖式" class="icon-m"></a></li>
-            </ul>
         </div>
     </div>
-
 
     <div class="container">
+        <!-- about區塊 -->
+        <div class="about df">
+            <div class="about--content ">
+                <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
+                <p>擅長 React、Vue
+                    等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！</p>
+                <ul class="df">
+                    <li><a href="#"><img src="./images/btn/youtube.png" alt="YT 圖式" class="icon-m"></a></li>
+                    <li><a href="#"><img src="./images/btn/podcast.png" alt="podcast 圖式" class="icon-m"></a></li>
+                    <li><a href="#"><img src="./images/btn/facebook.png" alt="FB 圖式" class="icon-m"></a></li>
+                    <li><a href="#"><img src="./images/btn/linkedin.png" alt="Linkedin 圖式" class="icon-m"></a>
+                    </li>
+                    <li><a href="#"><img src="./images/btn/instagram.png" alt="IG 圖式" class="icon-m"></a></li>
+                </ul>
+            </div>
+        </div>
+
         <!-- service 區塊 -->
         <div class="service">
             <div class="service--title">
@@ -176,6 +189,7 @@
                         </svg></a>
                 </div>
             </div>
+
         </div>
 
         <!-- 成功案例 -->
@@ -184,7 +198,7 @@
                 <h2>職涯諮詢成功案例</h2>
             </div>
             <div class="successCase--content">
-                <div class="successCase--tilteshow df">
+                <div class="successCase--tilteshow">
                     <div class="titleshow--img">
                         <img src="./images/index/a7.png" alt="成功案例圖片">
                     </div>
@@ -348,6 +362,7 @@
                 </li>
             </ul>
         </div>
+
     </div>
 
     <!-- 電子報 -->
@@ -365,9 +380,8 @@
             </div>
         </li>
     </ul>
-
-    <!-- 和我聯繫 -->
     <div class="container">
+        <!-- 和我聯繫 -->
         <div class="contact">
             <h2>與我聯繫</h2>
             <div class="contact--list">
@@ -439,6 +453,8 @@
     <footer>
         <p>© 2025 Alyse Wang. All rights reserved.</p>
     </footer>
+
+    </div>
 </body>
 
 </html>
