@@ -20,28 +20,30 @@
 </head>
 
 <body>
+    <header>
+        <!-- 導覽列選單 -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="blog.html">部落格</a></li>
+            </ul>
+        </nav>
 
-    <!-- 導覽列選單 -->
-    <ul class="navbar">
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="blog.html">部落格</a></li>
-    </ul>
-
-    <!-- hotnew 區塊-->
-    <div class="hotnews">
-        <img src="./images/article/C0.png" alt="自學前端不用怕：從零開始的三大關鍵">
-        <div class="hotnews--content">
-            <time datetime>2024/10/21</time>
-            <div class="tag"><a href="#">前端開發 x 職涯成長</a><span class="hotnews--tag">最新文章</span></div>
-            <h1>自學前端不用怕：從零開始的三大關鍵</h1>
-        </div>
-    </div>
-
-    <div class="container">
+        <!-- hotnew 區塊-->
+        <section class="hotnews">
+            <img src="./images/article/C0.png" alt="自學前端不用怕：從零開始的三大關鍵">
+            <article class="hotnews--content">
+                <time datetime>2024/10/21</time>
+                <div class="tag"><a href="#">前端開發 x 職涯成長</a><span class="hotnews--tag">最新文章</span></div>
+                <h1>自學前端不用怕：從零開始的三大關鍵</h1>
+            </article>
+        </section>
+    </header>
 
 
+    <main class="container">
         <!-- article--content 區塊 -->
-        <div class="article--content">
+        <article class="article--content">
             <ul>
                 <li>
                     <h2>前言</h2>
@@ -148,40 +150,39 @@
                 </li>
                 <li>
                     <div class="article--content--btngroup">
-                        <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
                             </svg>上一篇</button>
-                        <button type="button">下一篇<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <button type="button">下一篇<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
                             </svg></button>
                     </div>
                 </li>
             </ul>
-        </div>
+        </article>
+    </main>
 
+    <!-- contact 區塊 -->
+    <article class="contact">
+        <p>alysewang@hexschool.com</p>
+        <ul class="df">
+            <li><a href="#"><img src="./images/btn/youtube.png" alt="YT 圖式" class="icon-m"></a></li>
+            <li><a href="#"><img src="./images/btn/podcast.png" alt="podcast 圖式" class="icon-m"></a></li>
+            <li><a href="#"><img src="./images/btn/facebook.png" alt="FB 圖式" class="icon-m"></a></li>
+            <li><a href="#"><img src="./images/btn/linkedin.png" alt="Linkedin 圖式" class="icon-m"></a>
+            </li>
+            <li><a href="#"><img src="./images/btn/instagram.png" alt="IG 圖式" class="icon-m"></a></li>
+        </ul>
+    </article>
 
-    </div>
-            <!-- contact 區塊 -->
-        <div class="contact">
-            <p>alysewang@hexschool.com</p>
-            <ul class="df">
-                <li><a href="#"><img src="./images/btn/youtube.png" alt="YT 圖式" class="icon-m"></a></li>
-                <li><a href="#"><img src="./images/btn/podcast.png" alt="podcast 圖式" class="icon-m"></a></li>
-                <li><a href="#"><img src="./images/btn/facebook.png" alt="FB 圖式" class="icon-m"></a></li>
-                <li><a href="#"><img src="./images/btn/linkedin.png" alt="Linkedin 圖式" class="icon-m"></a>
-                </li>
-                <li><a href="#"><img src="./images/btn/instagram.png" alt="IG 圖式" class="icon-m"></a></li>
-            </ul>
-        </div>
-
-        <!-- footer 區塊-->
-        <footer>
-            <p>© 2025 Alyse Wang. All rights reserved.</p>
-        </footer>
+    <!-- footer 區塊-->
+    <footer>
+        <p>© 2025 Alyse Wang. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
