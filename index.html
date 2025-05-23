@@ -69,8 +69,8 @@
                 <div class="service--title">
                     <h2>專業服務與方案</h2>
                 </div>
-                <ul class="service--list">
-                    <li class="df">
+                <ul class="service--list" data-aos="fade-up">
+                    <li class="df" data-aos="fade-up">
                         <div class="service--img">
                             <img src="./images/index/a2.png" alt="服務照片一">
                         </div>
@@ -80,7 +80,7 @@
                             <p>履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。</p>
                         </div>
                     </li>
-                    <li class="df df-rr">
+                    <li class="df df-rr" data-aos="fade-up">
 
                         <div class="service--img">
                             <img src="./images/index/a3.png" alt="服務照片二">
@@ -92,7 +92,7 @@
                             <p>想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。</p>
                         </div>
                     </li>
-                    <li class="df">
+                    <li class="df" data-aos="fade-up">
                         <div class="service--img">
                             <img src="./images/index/a4.png" alt="服務照片三">
                         </div>
@@ -102,7 +102,7 @@
                             <p>想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。</p>
                         </div>
                     </li>
-                    <li class="df df-rr">
+                    <li class="df df-rr" data-aos="fade-up">
 
                         <div class="service--img">
                             <img src="./images/index/a5.png" alt="服務照片四">
@@ -114,7 +114,7 @@
                         </div>
                     </li>
                 </ul>
-                <div class="service--link df">
+                <div class="service--link df" data-aos="fade-up">
                     <p>聯繫我，取得更多資訊！</p>
                     <a href="#">
                         <img class="icon-40" src="./images/btn/contact-me.webp" alt="聯繫我">
@@ -123,7 +123,7 @@
             </section>
 
             <!-- blog 區塊 -->
-            <section class="blog">
+            <section class="blog"  data-aos="fade-up">
                 <div class="blog--title">
                     <h2>部落格精選</h2>
                 </div>
@@ -196,7 +196,7 @@
             </section>
 
             <!-- 成功案例 -->
-            <section class="successCase">
+            <section class="successCase" data-aos="fade-up">
                 <div class="successCase--title">
                     <h2>職涯諮詢成功案例</h2>
                 </div>
@@ -371,7 +371,7 @@
 
 
     <!-- 電子報 -->
-    <article>
+    <article  data-aos="fade-up">
         <ul class="newslitter df">
             <li class="newslitter--img">
                 <img src="./images/index/a12.png" alt="電子報訂閱">
@@ -462,6 +462,31 @@
     <footer>
         <p>© 2025 Alyse Wang. All rights reserved.</p>
     </footer>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // ─── 全域設定 ───
+            disable: false,                // 何時停用 AOS：可填 'phone' / 'tablet' / 'mobile'，或直接給布林值、表達式、函式
+            startEvent: 'DOMContentLoaded',// AOS 什麼事件被觸發時才開始初始化
+            initClassName: 'aos-init',     // 元素在初始化完成後會先加上的類名
+            animatedClassName: 'aos-animate', // 動畫正式啟動時套用的類名
+            useClassNames: false,          // 若設為 true，會把 `data-aos` 的值做為類名，在滾動時一併加上
+            disableMutationObserver: false,// 是否關閉 MutationObserver 自動偵測 DOM 變動（進階）
+            debounceDelay: 50,             // 視窗尺寸改變時的 debounce 間隔（毫秒）
+            throttleDelay: 99,             // 滾動事件的 throttle 間隔（毫秒）
+
+            // ─── 可用 `data-aos-*` 覆寫的項目 ───
+            offset: 150,                   // 觸發動畫時，元素與視窗的距離（px）
+            delay: 0,                      // 動畫延遲 0–3000 ms，步進 50 ms
+            duration: 800,                 // 動畫時長 0–3000 ms，步進 50 ms
+            easing: 'ease',                // 動畫預設 easing 函式
+            once: false,                   // true 表示動畫只在第一次向下滾動時播放
+            mirror: false,                 // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
+            anchorPlacement: 'top-bottom', // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
+        });
+    </script>
 </body>
 
 </html>
