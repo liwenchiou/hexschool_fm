@@ -41,17 +41,17 @@
     </header>
 
 
-    <main class="container">
+    <main class="container" >
         <!-- article--content 區塊 -->
         <article class="article--content">
             <ul>
-                <li>
+                <li  data-aos="fade-up">
                     <h2>前言</h2>
                     <p>嗨，我是
                         Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！
                     </p>
                 </li>
-                <li>
+                <li  data-aos="fade-up">
                     <img src="./images/article/C1.png" alt="打好基礎：HTML、CSS、JavaScript">
                     <h2>打好基礎：HTML、CSS、JavaScript</h2>
                     <h3>HTML 與語意化</h3>
@@ -82,7 +82,7 @@
                     <div class="article--content--tips">小結：在學習基礎語法時，同步進行小專案實作（如 Todo List、計算機、切版作品集）會讓你進步更快，也能累積展示用作品。
                     </div>
                 </li>
-                <li>
+                <li  data-aos="fade-up">
                     <img src="./images/article/C2.png" alt="擅用主流框架與工具">
                     <h2>擅用主流框架與工具</h2>
                     <h3>React、Vue 先挑一個</h3>
@@ -106,7 +106,7 @@
                     </div>
 
                 </li>
-                <li>
+                <li  data-aos="fade-up">
                     <img src="./images/article/C3.png" alt="持續練習與參與社群">
                     <h2>持續練習與參與社群</h2>
                     <h3>多參加前端挑戰 / Hackathon</h3>
@@ -131,7 +131,7 @@
                     </div>
 
                 </li>
-                <li>
+                <li  data-aos="fade-up">
                     <img src="./images/article/C4.png" alt="結語">
                     <h2>結語</h2>
                     <p class="content">自學前端可能遇到卡關、挫折，但同時也具備很高的自主性。只要把 基礎、框架、實踐
@@ -139,7 +139,7 @@
                     <div class="article--content--tips--content">「程式替你開路，諮詢替你指路，一起走向更寬廣的未來。」</div>
                     <p>感謝你的閱讀，如果這篇文章對你有幫助，別忘了幫忙分享，或在下方留言告訴我你的想法，也讓更多人一起受益吧！</p>
                 </li>
-                <li>
+                <li  data-aos="fade-up">
                     <h2>延伸閱讀</h2>
                     <div class="article--content--list">
                         <p>· 前端面試不再慌：破解常見提問的三大策略
@@ -148,7 +148,7 @@
                         <p>· SEO 與前端最佳實踐：讓搜尋引擎看見你的網站</p>
                     </div>
                 </li>
-                <li>
+                <li  data-aos="fade-up">
                     <div class="article--content--btngroup">
                         <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -167,7 +167,7 @@
     </main>
 
     <!-- contact 區塊 -->
-    <article class="contact">
+    <article class="contact"  data-aos="fade-up">
         <p>alysewang@hexschool.com</p>
         <ul class="df">
             <li><a href="#"><img src="./images/btn/youtube.png" alt="YT 圖式" class="icon-m"></a></li>
@@ -183,6 +183,32 @@
     <footer>
         <p>© 2025 Alyse Wang. All rights reserved.</p>
     </footer>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // ─── 全域設定 ───
+            disable: false,                // 何時停用 AOS：可填 'phone' / 'tablet' / 'mobile'，或直接給布林值、表達式、函式
+            startEvent: 'DOMContentLoaded',// AOS 什麼事件被觸發時才開始初始化
+            initClassName: 'aos-init',     // 元素在初始化完成後會先加上的類名
+            animatedClassName: 'aos-animate', // 動畫正式啟動時套用的類名
+            useClassNames: false,          // 若設為 true，會把 `data-aos` 的值做為類名，在滾動時一併加上
+            disableMutationObserver: false,// 是否關閉 MutationObserver 自動偵測 DOM 變動（進階）
+            debounceDelay: 50,             // 視窗尺寸改變時的 debounce 間隔（毫秒）
+            throttleDelay: 99,             // 滾動事件的 throttle 間隔（毫秒）
+
+            // ─── 可用 `data-aos-*` 覆寫的項目 ───
+            offset: 150,                   // 觸發動畫時，元素與視窗的距離（px）
+            delay: 0,                      // 動畫延遲 0–3000 ms，步進 50 ms
+            duration: 800,                 // 動畫時長 0–3000 ms，步進 50 ms
+            easing: 'ease',                // 動畫預設 easing 函式
+            once: false,                   // true 表示動畫只在第一次向下滾動時播放
+            mirror: false,                 // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
+            anchorPlacement: 'top-bottom', // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
+        });
+    </script>
 </body>
 
 </html>
