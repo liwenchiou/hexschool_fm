@@ -44,6 +44,7 @@
 }
 
 .hotnews--content time {
+    display: inline-block;
     font-size: 16px;
     margin-bottom: 4px;
 }
@@ -51,6 +52,8 @@
 .hotnews--content .tag {
     font-size: 24px;
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .hotnews--content .tag a {
@@ -58,11 +61,14 @@
     margin-right: 8px;
 }
 
+
 .hotnews--content .hotnews--tag {
     background-color: blue;
     color: #fff;
     padding: 6px 12px;
     border-radius: 50px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .hotnews--content h1 {
@@ -142,6 +148,7 @@
     font-weight: 450;
     color: black;
     margin-bottom: 8px;
+    line-height: 1.5;
 }
 .article--content li .content{
     font-size: 16px;

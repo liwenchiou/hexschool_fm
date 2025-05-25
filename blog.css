@@ -114,7 +114,7 @@
     padding: 80px 120px 80px 0px;
 }
 
-.hotnews--content time {
+.hotnews--content--time {
     font-size: 16px;
     margin-bottom: 4px;
 }
@@ -122,6 +122,8 @@
 .hotnews--content .tag {
     font-size: 24px;
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .hotnews--content .tag a {
@@ -134,6 +136,7 @@
     color: #fff;
     padding: 6px 12px;
     border-radius: 50px;
+    font-size: 16px;
 }
 
 .hotnews--content h2 {
@@ -158,6 +161,7 @@
     text-decoration: none;
     /* color: #4B4B4B; */
     background-color: #fff;
+    display: inline-block;
 }
 
 .hotnews--btn:hover {
@@ -275,20 +279,38 @@
 .article--list time {
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 4px;
+    display: inline-block;
 }
 
 .article--list .tag {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: blue;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 450;
+    line-height: 1.5;
+    gap:8px;
+}
+
+
+.article--list .tag span{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 6px 12px;
+    border-radius: 20px;
 }
 
 .article--list h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 8px;
+    line-height: 1.5;
 }
 
 .article--list p {
@@ -298,6 +320,7 @@
     /* 限制顯示 2 行 */
     overflow: hidden;
     margin-bottom: 16px;
+    line-height: 1.5;
 }
 
 .article--list button {
@@ -324,9 +347,15 @@
     margin-left: 484px;
 }
 
+.article--pagination svg{
+margin-top: 8px;
+/* display: flex;
+align-items: flex-end; */
+}
+
 .article--pagination--pages {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     /* display: block; */
     display: flex;
@@ -424,16 +453,17 @@
 
     .article--pagination {
         display: flex;
-        align-items: start;
+        align-items: center;
         padding: 8px 20px;
         width: 100%;
         margin-left: 0px;
         justify-content: center;
+        margin-bottom: 64px;
     }
 
     .article--pagination--pages {
-        width: 24px;
-        height: 24px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         /* display: block; */
         display: flex;
@@ -443,7 +473,7 @@
 }
 
 .contact{
-    padding: 80px 312px;
+    /* padding: 80px 312px; */
     display: flex;
     justify-content: space-between;
 }
