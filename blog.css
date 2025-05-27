@@ -1,6 +1,7 @@
 .container {
     max-width: 1340px;
     margin: 0 auto;
+    background-color: #fbfbfb;
 }
 
 
@@ -502,7 +503,7 @@ align-items: flex-end; */
 }
 
 .contact {
-    /* padding: 80px 312px; */
+    padding: 80px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -518,10 +519,10 @@ align-items: flex-end; */
     }
 }
 
-footer {
+footer p{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
-    padding: 24px 40px;
+    padding: 24px 0px;
 }
