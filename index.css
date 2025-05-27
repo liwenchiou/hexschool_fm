@@ -916,6 +916,7 @@
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: 8px;
+    align-items: end;
 }
 
 .contact--list p .email {
@@ -923,6 +924,15 @@
     font-weight: 500;
     line-height: 1.5;
     color: black;
+    margin-right: 16px;
+}
+
+.contact--list p span {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: black;
+    margin-right: 16px;
 }
 
 .contact--list p img {
