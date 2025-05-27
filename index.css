@@ -89,14 +89,14 @@
 
     .banner--title--content h1 {
         font-size: 52px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         color: #0027D5;
     }
 
     .banner--title--content p {
         font-size: 28px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         color: #0027D5;
     }
@@ -254,7 +254,7 @@
 
     .service--content h2 {
         font-size: 28px;
-        font-weight: bold;
+        font-weight: 700;
         margin-bottom: 8px;
     }
 
@@ -288,7 +288,7 @@
 .blog--title h2 {
     margin-left: 48px;
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     margin-bottom: 24px;
 }
@@ -331,7 +331,7 @@
     text-decoration: none;
     color: #0027D5;
     font-size: 24px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
     margin-right: 8px;
 }
@@ -354,7 +354,7 @@
 
 .card--content p {
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -402,7 +402,7 @@
 
     .blog--title h2 {
         font-size: 48px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         margin-bottom: 24px;
     }
@@ -462,7 +462,7 @@
 
     .card--content h2 {
         font-size: 28px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         margin-bottom: 8px;
     }
@@ -512,7 +512,7 @@
 
 .successCase--title h2 {
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     margin-bottom: 24px;
 }
@@ -536,7 +536,7 @@
 
 .successCase--tilteshow--content p {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
 }
 
@@ -550,7 +550,7 @@
 
 .successCase--content--btn {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     color: #0027D5;
     background-color: #fff;
@@ -609,13 +609,13 @@
 
     .successCase--tilteshow--content p {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
     }
 
     .successCase--content--btn {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         color: #0027D5;
         background-color: #fff;
@@ -896,7 +896,7 @@
 
 .contact h2 {
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
 }
 
@@ -938,7 +938,7 @@
 
     .contact h2 {
         font-size: 48px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
     }
 
