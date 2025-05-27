@@ -164,6 +164,8 @@
 
 .service {
     padding: 80px 0px;
+    border-bottom: 1px solid black;
+    margin-bottom: 64px;
 }
 
 .service--title {
@@ -284,6 +286,8 @@
 
 .blog {
     margin-bottom: 300px;
+        /* border-bottom: 1px solid black; */
+    /* margin-bottom: 64px; */
 }
 
 .blog--title h2 {
@@ -500,6 +504,7 @@
         justify-content: flex-end;
         gap: 24px;
         margin-top: 0px;
+        margin-bottom: 64px;
     }
 
     .blog-action a svg {
@@ -509,6 +514,8 @@
 
 .successCase {
     padding: 80px 0px;
+
+
 }
 
 .successCase--title h2 {
@@ -755,7 +762,11 @@
     }
 }
 
-.newslitter {}
+.newslitter {
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 .newslitter--img {
     width: 50%;
