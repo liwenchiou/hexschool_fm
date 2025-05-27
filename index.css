@@ -14,7 +14,8 @@
 
 .navbar--a {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.5;
     /* margin-right: 40px; */
     color: black;
     text-decoration: none;
@@ -47,14 +48,14 @@
 
 .banner--title--content h1 {
     font-size: 120px;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 1.5;
     color: #0027D5;
 }
 
 .banner--title--content p {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     color: #0027D5;
 }
@@ -75,7 +76,7 @@
     .banner--title {
         /* border: 1px solid black; */
         width: 100%;
-        height: 356px;
+        /* height: 356px; */
         background: url("./images/index/a1.png");
         display: flex;
         align-items: center;
@@ -123,7 +124,7 @@
     color: black;
     font-size: 28px;
     line-height: 1.5;
-    font-weight: 350;
+    font-weight: 500;
 }
 
 @media(max-width:992px) {
@@ -148,12 +149,14 @@
         color: black;
         font-size: 24px;
         line-height: 1.5;
-        font-weight: 350;
+        font-weight: 500;
     }
 }
-.service{
+
+.service {
     padding: 80px 0px;
 }
+
 .service--title {
     font-size: 64px;
     line-height: 1.5;
@@ -183,13 +186,17 @@
 
 .service--content h2 {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 8px;
+    line-height: 1.5;
+    color: #000000;
 }
 
 .service--content p {
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #4B4B4B;
 }
 
 .service--link {
@@ -198,10 +205,17 @@
     align-items: center;
 }
 
-@media(max-width:992px) {
-    .service{
-    padding: 64px 0px;
+.service--link p {
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
 }
+
+@media(max-width:992px) {
+    .service {
+        padding: 64px 0px;
+    }
+
     .service--title {
         font-size: 48px;
         line-height: 1.5;
@@ -238,13 +252,19 @@
 
     .service--content p {
         font-size: 16px;
-        font-weight: 350;
     }
 
     .service--link {
         /* border:1px solid black; */
+        flex-direction: column;
         justify-content: end;
-        align-items: center;
+        align-items: end;
+    }
+
+    .service--link p {
+        font-size: 28px;
+        line-height: 1.5;
+        font-weight: 700;
     }
 
     .mr--40,
@@ -290,7 +310,7 @@
 .card--content time {
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 350;
+    font-weight: 500;
 }
 
 .card--content .tag {
@@ -404,7 +424,7 @@
     .card--content time {
         font-size: 16px;
         line-height: 1.5;
-        font-weight: 350;
+        font-weight: 500;
     }
 
     .card--content .tag {
@@ -417,7 +437,7 @@
         text-decoration: none;
         color: #0027D5;
         font-size: 24px;
-        font-weight: 350;
+        font-weight: 500;
         line-height: 1.5;
         margin-right: 8px;
     }
@@ -436,11 +456,12 @@
         font-size: 28px;
         font-weight: bold;
         line-height: 1.5;
+        margin-bottom: 8px;
     }
 
     .card--content p {
         font-size: 16px;
-        font-weight: 350;
+        font-weight: 500;
         line-height: 1.5;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -452,7 +473,7 @@
 
     .card--btn {
         font-size: 16px;
-        font-weight: 350;
+        font-weight: 500;
         line-height: 1.5;
         color: #4B4B4B;
         background-color: #fff;
@@ -476,9 +497,11 @@
         color: #0027D5;
     }
 }
-.successCase{
+
+.successCase {
     padding: 80px 0px;
 }
+
 .successCase--title h2 {
     font-size: 64px;
     font-weight: bold;
@@ -508,9 +531,15 @@
     font-weight: bold;
     line-height: 1.5;
 }
-.successCase--content{
+
+.successCase--tilteshow--content span {
+    color: #0027D5
+}
+
+.successCase--content {
     margin-bottom: 40px;
 }
+
 .successCase--content--btn {
     font-size: 16px;
     font-weight: bold;
@@ -527,18 +556,25 @@
 }
 
 @media(max-width:992px) {
-    .successCase{
-    padding: 64px 0px;
-}
+    .successCase {
+        padding: 64px 0px;
+    }
+
     .successCase--content {
         margin-bottom: 40px;
     }
 
     .successCase--title h2 {
         font-size: 48px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .successCase--title h2 div {
+        width: 100%;
     }
 
     .titleshow--img {
@@ -603,21 +639,24 @@
 
 .successCase--list--h2 h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     margin-bottom: 8px;
 }
 
 .successCase--list--pgroup {
     border-bottom: 1px solid black;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .successCase--list--p {
     display: flex;
     margin-bottom: 8px;
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 500;
     color: #4B4B4B;
+    margin-bottom: 8px;
 
 }
 
@@ -629,7 +668,7 @@
     display: inline-block;
     padding: 8px 16px;
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
     border: 1px solid #4B4B4B;
     border-radius: 20px;
@@ -661,20 +700,22 @@
 
     .successCase--list--h2 h2 {
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         margin-bottom: 8px;
     }
 
     .successCase--list--pgroup {
         border-bottom: 1px solid black;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
     }
 
     .successCase--list--p {
         display: flex;
         margin-bottom: 8px;
         font-size: 16px;
-        font-weight: 350;
+        font-weight: 500;
         color: #4B4B4B;
 
     }
@@ -687,7 +728,7 @@
         display: inline-block;
         padding: 8px 16px;
         font-size: 16px;
-        font-weight: 350;
+        font-weight: 500;
         line-height: 1.5;
         border: 1px solid #4B4B4B;
         border-radius: 20px;
@@ -716,7 +757,8 @@
     display: flex;
     align-items: center;
 }
-.newlitter--sub{
+
+.newlitter--sub {
     padding: 172px 80px;
 }
 
@@ -727,14 +769,14 @@
 
 .newlitter--sub--input h2 {
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     margin-bottom: 16px;
 }
 
 .newlitter--sub--input p {
     font-size: 20px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
     margin-bottom: 24px;
 }
@@ -749,7 +791,7 @@
     background-color: #F1F1F1;
     color: #4B4B4B;
     font-size: 20px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
     margin-bottom: 8px;
     border: 0px;
@@ -757,7 +799,7 @@
 
 .newlitter--sub--input button {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     color: #0027D5;
     border-radius: 20px;
@@ -795,14 +837,14 @@
 
     .newlitter--sub--input h2 {
         font-size: 48px;
-        font-weight: bold;
+        font-weight: 500;
         line-height: 1.5;
         margin-bottom: 16px;
     }
 
     .newlitter--sub--input p {
         font-size: 20px;
-        font-weight: 350;
+        font-weight: 500;
         line-height: 1.5;
         margin-bottom: 24px;
     }
@@ -813,11 +855,11 @@
 
     .newlitter--sub--input input {
         width: 100%;
-        display: block;
+        display: 500;
         background-color: #F1F1F1;
         color: #4B4B4B;
         font-size: 20px;
-        font-weight: 350;
+        font-weight: 500;
         line-height: 1.5;
         margin-bottom: 8px;
         border: 0px;
@@ -825,7 +867,7 @@
 
     .newlitter--sub--input button {
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         color: #0027D5;
         border-radius: 20px;
@@ -861,20 +903,24 @@
     display: flex;
     align-items: center;
     font-size: 24px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
+    margin-bottom: 8px;
 }
 
-.contact--list p .email{
+.contact--list p .email {
     font-size: 32px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
+    color:black;
 }
 
 .contact--list p img {
     display: inline;
 }
-
+.contact--list svg{
+    color:black;
+}
 @media(max-width:992px) {
 
     .contact {
@@ -901,36 +947,36 @@
     .contact--list p {
         display: flex;
         align-items: center;
-            font-size: 24px;
-    font-weight: 350;
-    line-height: 1.5;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
     }
 
-    .contact--list p .email{
-    font-size: 24px;
-    font-weight: 350;
-    line-height: 1.5;
-}
+    .contact--list p .email {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
 
     .contact--list p img {
         display: inline;
     }
 
-    .contact--list .df{
+    .contact--list .df {
         flex-direction: column;
         align-items: start;
     }
 }
 
-footer{
+footer {
     padding: 24px 0;
     display: flex;
     justify-content: center;
-    border-top:1px solid black;
+    border-top: 1px solid black;
 }
 
-footer p{
+footer p {
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 500;
     line-height: 1.5;
 }

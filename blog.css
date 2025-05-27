@@ -16,7 +16,7 @@
 
 .navbar li a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 28px;
     color: black;
 }
@@ -38,7 +38,7 @@
     /* padding: 300px 80px; */
     background-color: gray;
     background: url("./images/blog/b1.png");
-        display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -57,10 +57,12 @@
 .banner--title--content h1 {
     font-size: 120px;
     font-weight: 900;
+    margin-bottom: 12px;
 }
 
 .banner--title--content p {
     font-size: 28px;
+    font-weight: 700;
 }
 
 @media(max-width:992px) {
@@ -104,6 +106,7 @@
 .hotnews {
     width: 100%;
     display: flex;
+    border-bottom: 1px solid black;
 }
 
 .hotnews--img {
@@ -120,6 +123,8 @@
 .hotnews--content--time {
     font-size: 16px;
     margin-bottom: 4px;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .hotnews--content .tag {
@@ -127,6 +132,7 @@
     margin-bottom: 8px;
     display: flex;
     align-items: center;
+
 }
 
 .hotnews--content .tag a {
@@ -189,14 +195,19 @@
         padding: 48px 12px;
     }
 
-    .hotnews--content time {
+    .hotnews--content--time {
         font-size: 16px;
         margin-bottom: 4px;
+        font-weight: 500;
+        line-height: 1.5;
     }
 
     .hotnews--content .tag {
         font-size: 24px;
         margin-bottom: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        
     }
 
     .hotnews--content .tag a {
@@ -214,6 +225,8 @@
     .hotnews--content h2 {
         font-size: 28px;
         margin-bottom: 8px;
+        font-weight: 700;
+        line-height: 1.5;
     }
 
     .hotnews--content p {
@@ -223,6 +236,8 @@
         /* 限制顯示 2 行 */
         overflow: hidden;
         margin-bottom: 24px;
+        font-weight: 500;
+        line-height: 1.5;
     }
 
     .hotnews--btn {
@@ -231,8 +246,10 @@
         border: 1px solid black;
         border-radius: 20px;
         text-decoration: none;
-        /* color: #4B4B4B; */
+        color: #4B4B4B;
         background-color: #fff;
+        font-weight: 500;
+        line-height: 1.5;
     }
 
     .hotnews--btn:hover {
@@ -243,6 +260,7 @@
 
 .article {
     padding: 80px 0px;
+    border-bottom: 1px solid black;
 }
 
 .article--search {
@@ -252,6 +270,9 @@
     border: 1px solid black;
     border-radius: 50px;
     padding: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color:#4B4B4B
 }
 
 .article--search svg {
@@ -293,21 +314,21 @@
     text-decoration: none;
     color: blue;
     font-size: 24px;
-    font-weight: 450;
+    font-weight: 500;
     line-height: 1.5;
-    gap:8px;
 }
 
 
-.article--list .tag span{
+.article--list .tag span {
     text-decoration: none;
     background-color: blue;
     color: white;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.5;
     padding: 6px 12px;
     border-radius: 20px;
+    margin-left: 8px;
 }
 
 .article--list h2 {
@@ -325,6 +346,8 @@
     overflow: hidden;
     margin-bottom: 16px;
     line-height: 1.5;
+    color: #4B4B4B;
+    font-weight: 500;
 }
 
 .article--list button {
@@ -333,8 +356,10 @@
     border: 1px solid black;
     border-radius: 20px;
     text-decoration: none;
-    /* color: #4B4B4B; */
+    color: #4B4B4B;
     background-color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .article--list button:hover {
@@ -351,9 +376,9 @@
     margin-left: 484px;
 }
 
-.article--pagination svg{
-margin-top: 8px;
-/* display: flex;
+.article--pagination svg {
+    margin-top: 8px;
+    /* display: flex;
 align-items: flex-end; */
 }
 
@@ -396,10 +421,10 @@ align-items: flex-end; */
 
     .article--list {
         margin: 0;
-        padding: 40px 12px;
+        padding: 40px 0px;
         display: flex;
         flex-wrap: wrap;
-        gap: 0px;
+        gap: 12px;
     }
 
     .article--list li {
@@ -422,7 +447,7 @@ align-items: flex-end; */
         text-decoration: none;
         color: blue;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .article--list h2 {
@@ -476,25 +501,27 @@ align-items: flex-end; */
     }
 }
 
-.contact{
+.contact {
     /* padding: 80px 312px; */
     display: flex;
     justify-content: space-between;
 }
 
-.contact p{
+.contact p {
     font-size: 32px;
     font-weight: 600;
 }
 
 @media(max-width:992px) {
-.contact{
-    display: none;
-}
+    .contact {
+        display: none;
+    }
 }
 
 footer {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 1.5;
     text-align: center;
+    padding: 24px 40px;
 }
